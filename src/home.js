@@ -1,6 +1,7 @@
 import coffee from './images/coffee-on-eighth.jpg';;
 
 const content = document.querySelector('#content');
+content.classList.add('home');
 
 const img = document.createElement('img');
 img.src = coffee;

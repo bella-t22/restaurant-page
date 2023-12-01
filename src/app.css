@@ -9,11 +9,6 @@ body {
     font-family: 'Abel', sans-serif;
 }
 
-#content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
 .cafe-img {
     height: 100vh;
     width: auto;
@@ -57,4 +52,35 @@ button {
     font-size: 1.2rem;
     box-shadow: 3px 5px 2px rgb(0, 0, 0);
     margin: 20px;
+}
+
+/* about us page styles */
+.home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 80px 50px 0 50px;
+}
+
+.about-us-img {
+    height: 90vh;
+    width: auto;
+}
+
+.about-us-header {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    margin: 4rem 0;
+}
+
+.about-us-para {
+    font-size: 1.5rem;
+    text-align: start;
+    justify-self: flex-start;
+    margin: 20px 0;
+    margin-right: 100px;
 }

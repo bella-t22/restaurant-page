@@ -1,4 +1,3 @@
 import './app.css';
-import './home.js';
-
-console.log('why helloooo');
+// import './home.js';
+import './about-us.js';

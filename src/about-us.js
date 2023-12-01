@@ -1,7 +1,4 @@
 import aboutUsImg from './images/about-us-img.jpg';
-
-console.log('hello from about us page!');
-
 const content = document.querySelector('#content');
 content.classList.remove('home');
 content.classList.add('about-us');

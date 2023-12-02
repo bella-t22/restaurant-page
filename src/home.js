@@ -1,4 +1,8 @@
-import coffee from './images/coffee-on-eighth.jpg';;
+import coffee from './images/coffee-on-eighth.jpg';
+import { getMenu } from './menu.js';
+import { getContact } from './contact.js';
+import { getAboutUs } from './about-us.js';
+import { getLocations } from './locations.js';
 
 function getHome() {
     const content = document.querySelector('#content');
@@ -48,6 +52,32 @@ function getHome() {
     contactBtn.classList.add('contact-btn');
     contactBtn.textContent = 'Contact';
     header.appendChild(contactBtn);
+
+    const btns = document.querySelectorAll('button');
+
+// const aboutUsPageBtn = document.querySelector('.about-us-btn');
+// const menuPageBtn = document.querySelector('.menu-btn');
+// const locationsPageBtn = document.querySelector('.locations-btn');
+// const contactPageBtn = document.querySelector('.contact-btn');
+
+btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const content = document.querySelector('#content');
+        while (content.firstChild) {
+            content.removeChild(content.firstChild);
+        }
+
+        if (btn === aboutUsBtn) {
+            getAboutUs();
+        } else if (btn === menuBtn) {
+            getMenu();
+        } else if (btn === locationsBtn) {
+            getLocations();
+        } else if (btn === contactBtn) {
+            getContact();
+        }
+    })
+})
 }
 
 export {getHome};

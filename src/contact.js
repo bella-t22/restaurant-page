@@ -1,4 +1,5 @@
 import contactImage from './images/contact-img.jpg';
+import { getNav } from './nav.js';
 
 function getContact() {
     const content = document.querySelector('#content');
@@ -6,6 +7,8 @@ function getContact() {
     content.classList.remove('home');
     content.classList.remove('locations');
     content.classList.add('contact');
+
+    getNav();
 
     const contactImg = document.createElement('img');
     contactImg.classList.add('contact-img');

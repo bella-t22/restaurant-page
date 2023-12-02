@@ -11,6 +11,7 @@ import muffinImg from './images/muffin.jpg';
 import frenchToastImg from './images/french-toast.jpg';
 import croissantImg from './images/croissant.jpg';
 import biscottiImg from './images/biscotti.jpg';
+import { getNav } from './nav.js';
 
 function getMenu() {
 const content = document.querySelector('#content');
@@ -18,6 +19,8 @@ content.classList.remove('home');
 content.classList.remove('contact');
 content.classList.remove('locations');
 content.classList.remove('about-us');
+
+getNav();
 
 const menuTitle = document.createElement('h1');
 menuTitle.classList.add('menu-title');

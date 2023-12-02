@@ -1,4 +1,5 @@
 import aboutUsImg from './images/about-us-img.jpg';
+import { getNav } from './nav.js';
 
 function getAboutUs() {
     const content = document.querySelector('#content');
@@ -6,6 +7,8 @@ function getAboutUs() {
     content.classList.remove('contact');
     content.classList.remove('locations');
     content.classList.add('about-us');
+
+    getNav();
 
     const section = document.createElement('div');
     section.classList.add('section');

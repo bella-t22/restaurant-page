@@ -1,5 +1,6 @@
 import plantCafe from './images/plant-cafe.jpg';
 import vistaCafe from './images/vista-cafe.jpg';
+import { getNav } from './nav.js';
 
 function getLocations() {
     const content = document.querySelector('#content');
@@ -7,6 +8,8 @@ function getLocations() {
     content.classList.remove('home');
     content.classList.remove('contact');
     content.classList.add('locations');
+
+    getNav();
 
     const locationOne = document.createElement('div');
     locationOne.classList.add('locationDiv');

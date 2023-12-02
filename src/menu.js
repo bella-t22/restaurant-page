@@ -12,7 +12,12 @@ import frenchToastImg from './images/french-toast.jpg';
 import croissantImg from './images/croissant.jpg';
 import biscottiImg from './images/biscotti.jpg';
 
+function getMenu() {
 const content = document.querySelector('#content');
+content.classList.remove('home');
+content.classList.remove('contact');
+content.classList.remove('locations');
+content.classList.remove('about-us');
 
 const menuTitle = document.createElement('h1');
 menuTitle.classList.add('menu-title');
@@ -81,3 +86,6 @@ const frenchToast = new menuItem('food', frenchToastImg, 'French Toast', 'Served
 const croissant = new menuItem('food', croissantImg, 'Assorted Croissants', 'Chocolate, Strawberry, or Butter.', '4');
 const biscotti = new menuItem('food', biscottiImg, 'Biscotti', 'Classic almond recipe, made in house.', '2');
 const cinnamonBun = new menuItem('food', cinBunImg, 'Cinnamon Bun', 'Signature recipe and made in house.', '5');
+}
+
+export {getMenu};
